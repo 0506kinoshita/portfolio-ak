@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>ポートフォリオ</title>
+		<link rel="stylesheet" href="style/reset.css" type="text/css" />
+		<link rel="stylesheet" href="style/contents.css" type="text/css" />
+		<link rel="stylesheet" href="style/middle.css" type="text/css" />
+		<link rel="stylesheet" href="style/small.css" type="text/css" />
+
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="wrapperTop">
+				<div id="stage">
+					<h1 id="titleBox">Kouki Kinosita</h1>
+				</div>
+			</div>
+			<div id="center">
+				<ul class="btns">
+					<a href="#profileTitle" class="btn btn1"><li >PLOFILE</li></a>
+					<a href="#skillTitle" class="btn btn2"><li >SKILE</li></a>
+					<a href="#productTitle" class="btn btn3"><li >PRODUCTS</li></a>
+					<a href="#contuctTitle" class="btn btn4"><li >CONTACT</li></a>
+				</ul>
+				<section id="profileTitle">
+					<header>
+						<h1 class="title">PLOFILE</h1>
+					</header>
+					<div class="contents">
+						<h3 id="myname">木下滉貴</h3>
+						<div class="profile">
+							<div class="sentence sentenseAdd">
+								<p>
+									初めまして木下滉貴と申します<br>
+									1995年生まれ24歳です<br>
+									出身：大阪<br>
+									前職：日用品の営業<br>
+									2019年3月よりプログラミングスクールTECH::EXPERTにて学習を開始<br>
+									現在はフルタイムで別の仕事で働きつつ学習を続けています<br><br>
+									大学は経済学部出身で完全初心者からの学習でした<br>
+									自分で何かを作り出してみたい！<br>
+									エンジニア、プログラマーってなんかカッコ良い!<br>
+									という単純な動機ではありますが日々学習を続けています。
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="skillTitle">
+					<header>
+						<h1 class="title skill">SKILL<span>&nbsp;&nbsp;&nbsp;</span>
+							<u id="skillOpen" class="open">詳細はこちら</u>
+						</h1>
+					</header>
+					<div class="contents">
+						<h2>メイン技術</h2>
+						<div id="skills">
+							<image src="image/htmlcss.png" class="icon" ></image>
+							<image src="image/js.png" class="icon" ></image>
+							<image src="image/react.jpg" class="icon" ></image>
+							<image src="image/rails.png" class="icon" ></image>
+						</div>
+					</div>
+				</section>
+				<section id="productTitle">
+					<header>
+						<h1 class="title">PRODUCTS</h1>
+					</header>
+					<div class="products">
+						<h2>REPS&nbsp;&nbsp;&nbsp;&nbsp;<u id="repsOpen" class="smallOpen">詳細はこちら</u></h2>
+						<div class="profile">
+							<div class="left">
+								<p>実際のアプリのURLです</p>
+								<a href="https://appreps.herokuapp.com" id="link">https://appreps.herokuapp.com</a>
+								<image src="image/reps.png" class="product"></image>
+							</div>
+							<div class="sentence">
+								<p>
+									（制作期間6月半ばの約2週間）<br>
+									完全オリジナルアプリです
+									<br><br>
+									[使用言語]<br>
+									・Ruby on Rails<br>
+									・haml<br>
+									・sass<br>
+									・jquery<br>
+									DB： MYSQL<br>
+									デプロイ： heloku<br>
+									<br>
+									機能）<br>
+									ユーザー新規登録、ログイン、ログアウト、曲登録、消去
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="products">
+						<h2>ポートフォリオ&nbsp;&nbsp;&nbsp;&nbsp;<u id="portfolioOpen" class="smallOpen">詳細はこちら</u>
+						</h2>
+						<div class="profile">
+							<div class="left">
+								<image src="image/portfolio.png" class="product"></image>
+							</div>
+							<div class="sentence">
+								<p>
+									（制作期間9月~10月）three.js部分2週間、その他3日<br>
+									現在ご覧いただいているページです
+									<br><br>
+									[使用言語]<br>
+									・html css<br>
+									・three.js<br>
+									・jquery<br><br>
+									現在働いている企業内でのWebアプリコンテストに応募した際の作品でもあります。<br>
+									フルタイムでの仕事をしながら一からの勉強だったthree.jsの実装、そして一つの作品を仕上げることができたことは自分の中で自信につながりました。
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="contuctTitle">
+					<header>
+						<h1 class="title">CONTACT</h1>
+					</header>
+					<div class="contact">
+						<div id="mail">
+							<h>ご連絡はこちらまで！！！</h>
+							<p>0506kinoshita@gmail.com</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<script src="js/modal.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script src="js/three.js"></script>
+		<div class="modal skillModal">
+			<div class="modalHeader">
+				<div class="close"><i class="fas fa-times"></i></div>
+				<h1 class="modalTitle">触れたことのある言語</h1>
+			</div>
+			<div class="modalCenter">
+				<p>
+					学習期間2019年3月〜<br>
+					3~6月は主にrails、6月〜html css js、8月半ば〜react<br><br>
+					触れたことのある技術<br><br>
+					html css haml sass javascript jQuery react three.js Ruby RubyonRails<br>
+					git github AWS heroku <br>
+					MySQL 等<br><br>
+					現在は react について学習しており、フロントエンドエンジニア目指して学習を続けています。
+				</p>
+			</div>
+		</div>
+		<div class="modal repsModal">
+			<div class="modalHeader">
+				<div class="close"><i class="fas fa-times" size:3x></i></div>
+				<h1 class="modalTitle">カラオケでのレパートリー管理アプリ</h1>
+			</div>
+			<div class="modalCenter">
+				<p>
+					スクールのカリキュラム終了後 Ruby On Rails を用いて作成しました。<br><br>
+					カラオケ好きの人を対象としたレパートリー管理アプリです<br><br>
+					railsはログイン画面、登録画面とそれぞれのview画面に遷移し、そこで情報をやりとりすることが主流ですが、今回はローカル環境でいう"localhost:3000"のページで全ての処理が完結するものを作ってみました。
+				</p>
+			</div>
+		</div>
+		<div class="modal portfolioModal">
+			<div class="modalHeader">
+				<div class="close"><i class="fas fa-times" size:3x></i></div>
+				<h1 class="modalTitle">ポートフォリオ</h1>
+			</div>
+			<div class="modalCenter">
+				<p>
+					・three.jsを用いた３D描画<br>
+					・メディアクエリを用いたレスポンシブ対応<br>
+					・マテリアルデザインの採用<br><br>
+					「かっこいいポートフォリオ作ってみたい」「一度three.jsに触れてみたい」という気持ちから作成しました<br>
+					マテリアルデザインは実際に扱ってみるのは初めてでしたが「影をつける」「色を多く使わない」等ユーザーの見やすさを意識して作成しました。<br><br>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
