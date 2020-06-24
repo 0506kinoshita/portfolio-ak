@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>ポートフォリオ</title>
-		<link rel="stylesheet" href="style/reset.css" type="text/css" />
-		<link rel="stylesheet" href="style/contents.css" type="text/css" />
-		<link rel="stylesheet" href="style/middle.css" type="text/css" />
-		<link rel="stylesheet" href="style/small.css" type="text/css" />
+		<link rel="stylesheet" href="css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="css/contents.css" type="text/css" />
+		<link rel="stylesheet" href="css/middle.css" type="text/css" />
+		<link rel="stylesheet" href="css/small.css" type="text/css" />
 
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,7 +25,7 @@
 				</ul>
 				<section id="skillTitle">
 					<header>
-						<h1 class="title skill">SKILL<span>&nbsp;&nbsp;&nbsp;</span>
+						<h1 class="title titleBigSize skill">SKILL<span>&nbsp;&nbsp;&nbsp;</span>
 							<u id="skillOpen" class="open">詳細はこちら</u>
 						</h1>
 					</header>
@@ -39,12 +39,14 @@
 						</div>
 					</div>
 				</section>
+
 				<section id="productTitle">
 					<header>
-						<h1 class="title">PRODUCTS</h1>
+						<h1 class="title titleBigSize">PRODUCTS</h1>
 					</header>
+
 					<div class="products">
-						<h2>REPS&nbsp;&nbsp;&nbsp;&nbsp;<u id="repsOpen" class="smallOpen">詳細はこちら</u></h2>
+						<h2><span class="title">REPS</span><u class="repsOpen smallOpen open">アプリの詳細</u></h2>
 						<div class="profile">
 							<div class="left">
 								<p>実際のアプリのURLです</p>
@@ -65,13 +67,35 @@
 									デプロイ： heloku<br>
 									<br>
 									機能）<br>
-									ユーザー新規登録、ログイン、ログアウト、曲登録、消去
+									ユーザー新規登録、ログイン、ログアウト、曲登録、消去<br>
+									<u class="repsOpen smallOpen open">アプリの詳細</u>
 								</p>
 							</div>
 						</div>
 					</div>
+
 					<div class="products">
-						<h2>ポートフォリオ&nbsp;&nbsp;&nbsp;&nbsp;<u id="portfolioOpen" class="smallOpen">詳細はこちら</u>
+						<h2><span class="title">OKRアプリ</span><u class="okrOpen smallOpen open">アプリの詳細</u>
+						</h2>
+						<div class="profile">
+							<div class="left">
+								<p>実際のアプリのURLです</p>
+								<a href="http://okr-laapp.herokuapp.com/" class="link" target="_blank" rel="noopener noreferrer">http://okr-laapp.herokuapp.com/</a>
+								<image src="image/okr.png" class="product"></image>
+							</div>
+							<div class="sentence">
+								<p>
+									PHP/Laravelを使用して作成しました。<br>
+									OKRという目標管理システムをアプリ化しました。<br><span class="margin"></span>
+									目標を階層ごとに設定してそれを見える化することができるアプリです。<br>
+									<u class="okrOpen smallOpen open">アプリの詳細</u>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="products">
+						<h2><span class="title">ポートフォリオ</span><u class="portfolioOpen smallOpen open">アプリの詳細</u></h2>
 						</h2>
 						<div class="profile">
 							<div class="left">
@@ -87,11 +111,13 @@
 									・three.js<br>
 									・jquery<br><br>
 									現在働いている企業内でのWebアプリコンテストに応募した際の作品でもあります。<br>
-									フルタイムでの仕事をしながら一からの勉強だったthree.jsの実装、そして一つの作品を仕上げることができたことは自分の中で自信につながりました。
+									フルタイムでの仕事をしながら一からの勉強だったthree.jsの実装、そして一つの作品を仕上げることができたことは自分の中で自信につながりました。<br>
+									<u class="portfolioOpen smallOpen open">アプリの詳細</u>
 								</p>
 							</div>
 						</div>
 					</div>
+
 				</section>
 			</div>
 		</div>
@@ -114,6 +140,7 @@
 				</p>
 			</div>
 		</div>
+		
 		<div class="modal repsModal">
 			<div class="modalHeader">
 				<div class="close"><i class="fas fa-times" size:3x></i></div>
@@ -127,6 +154,7 @@
 				</p>
 			</div>
 		</div>
+
 		<div class="modal portfolioModal">
 			<div class="modalHeader">
 				<div class="close"><i class="fas fa-times" size:3x></i></div>
@@ -142,5 +170,29 @@
 				</p>
 			</div>
 		</div>
+
+		<div class="modal okrModal">
+			<div class="modalHeader">
+				<div class="close"><i class="fas fa-times" size:3x></i></div>
+				<h1 class="modalTitle">OKRアプリ</h1>
+			</div>
+			<div class="modalCenter">
+				<p>
+					[使用言語]<br>
+					・Laravel<br>
+					・LeaderLine.js 等<br>
+					[データベース]<br>
+					・MySQL<br>
+					[デプロイ]<br>
+					・heroku<br><br>
+					機能）<br>
+					Laravelを用いて作成したアプリです<br><br>
+					[LeaderLine.jsの採用]<br>
+					登録したOKR同士の結びつきを矢印で視覚的にわかりやすくするため導入しました。<br><br>
+					OKRという目標管理の考え方に基づいて使用することができるものを作成しました。
+				</p>
+			</div>
+		</div>
+
 	</body>
 </html>
